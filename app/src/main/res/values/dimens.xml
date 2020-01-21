@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="suggestUserAvatarSize">80dp</dimen>
+    <dimen name="suggestUserAvatarSize_medium">60dp</dimen>
+    <dimen name="suggestUserAvatarSize_small">40dp</dimen>
+    <dimen name="suggestUserAvatarSize_extra_small">30dp</dimen>
+    <dimen name="margin8dp">8dp</dimen>
+    <dimen name="spaceMedium">16dp</dimen>
+</resources>

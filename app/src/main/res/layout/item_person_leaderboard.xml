@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView_item_person"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/textView_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spaceMedium"
+            android:layout_marginTop="@dimen/margin8dp"
+            android:layout_marginRight="@dimen/spaceMedium"
+            android:layout_marginBottom="@dimen/margin8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="3"
+            android:textColor="@color/colorTextGray" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imageView_profile_picture"
+            android:layout_width="@dimen/suggestUserAvatarSize_extra_small"
+            android:layout_height="@dimen/suggestUserAvatarSize_extra_small"
+            android:scaleType="centerCrop"
+            app:riv_oval="true"
+            android:src="@drawable/male"
+            android:layout_gravity="center"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/suggestUserAvatarSize_small"
+            >
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_semibold"
+                android:maxLines="1"
+                android:text="Harley Joe"
+                android:textColor="@color/colorTextGray" />
+
+
+            <TextView
+                android:id="@+id/textView_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/suggestUserAvatarSize_small"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="end"
+                android:maxLines="1"
+                android:text="2300"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

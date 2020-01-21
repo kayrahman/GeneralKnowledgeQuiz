@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_graient"
+    tools:context=".ui.QuizResultActivity">
+
+    <ImageView
+        android:id="@+id/image_crown"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/crown"
+        android:layout_marginTop="30dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/hc_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Here is your result"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:layout_below="@+id/image_crown"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hc_result"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        >
+
+    <ProgressBar
+        android:id="@+id/pb_tv_pr_info_destination"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="190dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:progress="100"
+        android:progressDrawable="@drawable/circle_progress_bar_bg_white">
+
+
+    </ProgressBar>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_result_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="30%"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_result_percentage"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_correct_ans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_hc_of"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" of "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_total_questions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 answers"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/btn_ac_result_take_another_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take another test"
+        android:layout_below="@+id/fl"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/bg_btn"
+        android:textColor="@color/textColorWhite"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fl"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_ac_quiz_result_total_quiz_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TESTS TAKEN"
+            android:textColor="@color/colorWhite"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

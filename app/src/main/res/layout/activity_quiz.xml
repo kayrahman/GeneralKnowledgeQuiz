@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_fm_quiz_question_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please select the correct statement"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/lato_bold"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        app:cardCornerRadius="7dp"
+        android:elevation="4dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RadioGroup
+                android:id="@+id/rg_ac_quiz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rb_fm_quiz_option_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:text="Qestion Num One"
+                    android:textSize="16sp"
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@color/colorLightGray"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rb_fm_quiz_option_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:text="Qestion Num Two"
+                    android:textSize="16sp"
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@color/colorLightGray"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rb_fm_quiz_option_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:text="Qestion Num Three"
+                    android:textSize="16sp"
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@color/colorLightGray"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rb_fm_quiz_option_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:text="Qestion Num Four"
+                    android:textSize="16sp"
+
+                    />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/ln_ans_noti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/cv_questions"
+        >
+
+        <Button
+            android:id="@+id/pop_up_correct_ans"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorGreenAccent"
+            android:text="Correct"
+            android:textColor="@color/colorWhite"
+            android:drawableLeft="@drawable/ic_action_check"
+            android:drawablePadding="4dp"
+            android:padding="8dp"
+            android:maxLines="2"
+            />
+
+        <Button
+            android:id="@+id/pop_up_wrong_ans"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:text="Wrong"
+            android:textColor="@color/colorWhite"
+            android:drawableLeft="@drawable/ic_action_close"
+            android:drawablePadding="4dp"
+            android:padding="8dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/ln_ans_noti"
+        >
+
+    <Button
+        android:id="@+id/btn_fm_quiz_check_answer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorLightBlueDark"
+        android:padding="4dp"
+        android:layout_weight="3"
+        />
+
+        <Button
+            android:id="@+id/btn_remaining_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0s"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:padding="4dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

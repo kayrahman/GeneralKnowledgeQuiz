@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Quiz Door</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_follow">Follow</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00e2b6</color>
+    <color name="colorPrimaryDark">#00e2dc</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorLightBlueDark">#00e2b6</color>
+
+    //
+    <color name="colorRed">#f72046</color>
+    <color name="colorPink">#f9458a</color>
+    <color name="colorOrange">#f9458a</color>
+    <color name="colorGreen">#008d7f</color>
+    <color name="colorGreenAccent">#009800</color>
+    <color name="colorGold">#ffab40</color>
+    <color name="colorSteel">#8b8c8e</color>
+    <color name="colorGray">#9d9d9a</color>
+    <color name="colorTransparent">#50ffffff</color>
+    <color name="colorGradientDeep">#12153f</color>
+    <color name="colorGradientLight">#3c2d55</color>
+
+
+    <!-- Black 87% -->
+    <color name="primary_text_default_material_light">#de000000</color>
+    <!-- Black 54% -->
+    <color name="secondary_text_material_light">#8a000000</color>
+    <!-- Black 54% (TODO: same as secondary?) -->
+    <color name="tertiary_text_material_light">#8a000000</color>
+
+    <!-- White 87% -->
+    <color name="primary_text_default_material_dark">#deffffff</color>
+    <!-- White 38% -->
+    <color name="secondary_text_material_dark">#61ffffff</color>
+    <!-- White 38% (TODO: same as secondary?) -->
+    <color name="tertiary_text_material_dark">#61ffffff</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorLightGray">#e5e5e5</color>
+    <color name="textColor">#121212</color>
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="colorLightGold">#ffdd0c</color>
+    <color name="colorTextGray">#241f28</color>
+
+</resources>
