@@ -1,5 +1,8 @@
 # GeneralKnowledgeQuiz
-Simple quiz app with Kotlin
+General knowledge quiz is an offline quiz app with different categories. 
+
+## Tools used:
+Android Studio,Kotlin,SQLite
 
 ## Screenshots
 
